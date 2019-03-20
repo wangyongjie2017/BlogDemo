@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS3之attr()</title>
+    <style>
+        .box a{
+            color: #000;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .box a::after {
+            content: attr(href);
+            border-bottom: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>红线内容为attr()获取</h2>
+        <a href="http://wangyongjie.top">
+            a链接指向：
+        </a>
+    </div>
+</body>
+</html>

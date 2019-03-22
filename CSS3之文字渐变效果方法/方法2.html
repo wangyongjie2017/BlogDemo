@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS3之文字渐变效果方法-方法2</title>
+    <style>
+        .box {
+            background: #1c1b19;
+            text-align: center;
+        }
+
+        .text-gradient {
+            display: inline-block;
+            font-size: 0.3rem;
+            color: #fdfde3;
+            background-image: -webkit-linear-gradient(90deg, #fdfde3 25%, #bda676 100%);
+            background-image: -moz-linear-gradient(90deg, #fdfde3 25%, #bda676 100%);
+            background-image: linear-gradient(90deg, #fdfde3 25%, #bda676 100%);
+            /* background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(0, 128, 0, 1)), to(rgba(51, 51, 51, 1))); */
+            /* 只要代码 */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="text-gradient">
+            黑伍神秘价火爆开抢
+        </div>
+    </div>
+</body>
+</html>
